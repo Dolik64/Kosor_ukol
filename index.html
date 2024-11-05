@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrázek na stránce</title>
+    <title>Video ve Smyčce a Text</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        video {
+            max-width: 500px;
+            height: auto;
+        }
+        .text-block {
+            max-width: 400px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ukázkový obrázek</h1>
-    <img src="mapa1.png" alt="Popis obrázku" width="600">
+    <h1>Video a Text</h1>
+    <div class="container">
+        <video src="video.mp4" controls loop autoplay muted></video>
+        <div class="text-block">
+            <h2>Popis videa</h2>
+            <p>Toto je ukázkový text, který doprovází video. Můžeš sem přidat jakékoli informace, které se vztahují k videu nebo obsahu na stránce. Uprav tento text podle svých potřeb.</p>
+        </div>
+    </div>
 </body>
 </html>
